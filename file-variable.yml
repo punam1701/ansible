@@ -1,0 +1,9 @@
+---
+- name: this is my file variable playbook
+  hosts: all
+  vars_files: deevesh.yml
+  tasks:
+    - name: this my first file variable task
+      debug:
+         msg: "{{ URL }}"
+...           

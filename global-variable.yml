@@ -1,0 +1,10 @@
+---
+- name: my global variable playbook
+  hosts: all
+  vars:
+    URL: www.cdec.com
+  tasks:
+    - name: my task one for global variable playbook
+      debug:
+         msg: "{{ URL }}" 
+...             
